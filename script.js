@@ -1,1 +1,1 @@
-// Placeholder for your Reset Gut JS
+// Your full JavaScript logic goes here
