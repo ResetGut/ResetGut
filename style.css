@@ -1,1 +1,32 @@
-/* Your full style goes here (copied from Canva-generated CSS) */
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 20px;
+    background: #f8f9fa;
+    color: #333;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+input[type="text"], input[type="range"] {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+button {
+    padding: 10px 16px;
+    margin-top: 10px;
+    border: none;
+    background-color: #E63946;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #c9303c;
+}
