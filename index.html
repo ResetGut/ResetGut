@@ -1,53 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reset Gut</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Gut</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- START: UI BODY CONTENT -->
 <div class="card">
-    <h1>Track Today’s Meals 🍽️</h1>
-    <label>What did you eat today?</label>
-    <input type="text" id="meal-input" placeholder="e.g. 2 slices pizza + Coke">
-    <button onclick="addMeal()">Add Meal</button>
-    <div id="meal-feedback" style="display:none;">
-        <p><strong>2 slices pizza + Coke</strong></p>
-        <p>🍕⚠️ Too much sugar & low fiber. Add some greens or water!</p>
-    </div>
+  <h1>Welcome to Reset Gut ❤️‍🔥</h1>
+  <p>Let’s personalize your gut health journey.</p>
 
-    <h2>How are you feeling today?</h2>
-    <div>
-        <button onclick="selectMood('bad')">😞 Bad</button>
-        <button onclick="selectMood('okay')">😐 Okay</button>
-        <button onclick="selectMood('good')">😊 Good</button>
-    </div>
+  <h2>Track Today’s Meals 🍽️</h2>
+  <label>What did you eat today?</label>
+  <input type="text" id="meal-input" placeholder="e.g. 2 slices pizza + Coke">
+  <button onclick="addMeal()">Add Meal</button>
 
-    <h2>💩 Digestion Tracker</h2>
-    <div>
-        <button onclick="selectPoop(1)">💩</button>
-        <button onclick="selectPoop(2)">💩</button>
-        <button onclick="selectPoop(3)">💩</button>
-        <button onclick="selectPoop(4)">💩</button>
-        <button onclick="selectPoop(5)">💩</button>
-    </div>
+  <div id="meal-feedback" style="display:none; margin-top:10px;">
+    <p><strong>2 slices pizza + Coke</strong></p>
+    <p>🍕⚠️ Too much sugar & low fiber. Add some greens or water!</p>
+  </div>
 
-    <h2>⚡ Energy Tracker</h2>
-    <input type="range" min="1" max="5" value="3" id="energy-slider">
+  <h2>How are you feeling today?</h2>
+  <div>
+    <button onclick="selectMood('bad')">😞 Bad</button>
+    <button onclick="selectMood('okay')">😐 Okay</button>
+    <button onclick="selectMood('good')">😊 Good</button>
+  </div>
 </div>
 
-<!-- Chatbot Section -->
 <div class="card">
-    <h2>ResetBot 🤖</h2>
-    <div id="chat-box">
-        <p><strong>User:</strong> Why am I bloated at night?</p>
-        <p><strong>Bot:</strong> 🌙 Night bloating is often due to slow digestion. Try reducing dairy and sugar after 6 PM.</p>
-    </div>
-    <input type="text" id="chat-input" placeholder="Ask me anything..." />
-    <button onclick="sendMessage()">Send</button>
+  <h2>ResetBot 🤖</h2>
+  <div id="chat-box">
+    <p><strong>User:</strong> Why am I bloated at night?</p>
+    <p><strong>Bot:</strong> 🌙 Night bloating is often due to slow digestion. Try reducing dairy and sugar after 6 PM.</p>
+  </div>
+  <input type="text" id="chat-input" placeholder="Ask me anything..." />
+  <button onclick="sendMessage()">Send</button>
 </div>
 
 <script src="script.js"></script>
